@@ -1,0 +1,19 @@
+Totaal idee:
+Website
+
+python backdend
+flask
+frontend in html en php css javascript
+
+
+
+
+
+
+
+
+
+
+Extras:
+- interface voor de backdend van spotify  om de database op te bouwen en te onderhouden
+- dataset opkuisen
