@@ -1,0 +1,68 @@
+.dataBG {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(100%);
+}
+nav{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin-top: 25%;
+    margin-left: 25%;
+    background: rgba(91, 132, 196,0.95);
+    min-width: 570px;
+}
+nav a {
+    color: #f1f1f1;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-out 10ms;
+}
+nav a:hover:not(.active) {
+    background-color: rgba(194, 210, 233,0.7);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline-start: 10%;
+    padding-inline-end: 5%;
+}
+nav li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    min-width: 100px;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both
+}
+.logo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+.logo img{
+    width: 150px;
+    margin-left: 20px;
+}
+.groupname{
+    margin-left: auto;
+    margin-top: 70px;
+    margin-right: 5%;
+    font-family: sans-serif;
+    color: rgb(1, 26, 153);
+}
