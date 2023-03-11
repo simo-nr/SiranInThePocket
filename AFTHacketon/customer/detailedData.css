@@ -48,13 +48,6 @@ nav ul::after {
     display: flex;
     flex-direction: row;
 }
-.topshoppingcart{
-    width: 35px;
-    height: 35px;
-    margin-top: 70px;
-    margin-right: 50px;
-    background-color: red;
-}
 .logo{
     width: 100%;
     display: flex;
@@ -69,59 +62,47 @@ nav ul::after {
 .container{
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 5%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
-.reviewAVG{
-    height: auto;
+.preword{
+    background-color: rgba(100,100,100);
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 5px;
+    width: 90%;
+}
+.review{
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    background-color: rgba(100,100,100);
+    padding: 5px;
+}
+.keywords{
     display: flex;
     flex-direction: row;
-    justify-content: flex-starts
+    justify-content: flex-start;
 }
-.reviewAVGtext{
-    height: 400px;
-    width:30%
+
+.keyword{
+    margin-right: 5%;
+    background-color:rgb(91, 132, 196) ;
+    border-radius: 25%;
+
 }
-.more h3{
-    margin-left: 35%;
+/*
+.summary{
+
 }
-.box1{
-    width:25%;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgba(100,100,100);
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 50%;
-    box-shadow: 0 4px 8px 0 rgba(150, 204, 204, 0.2), 0 6px 20px 0 rgba(91, 195, 232,0.5);
-    align-self: flex-start;
+.solution{
+
 }
-.box2{
-    width:30%;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgba(100,100,100);
-    margin-left: 10%;
-    margin-top: 5%;
-    box-shadow: 0 4px 8px 0 rgba(150, 204, 204, 0.2), 0 6px 20px 0 rgba(91, 195, 232,0.5);
-}
-.box3{
-    width:80%;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgba(100,100,100);
-    margin-left: 10%;
-    margin-top: 5%;
-    box-shadow: 0 4px 8px 0 rgba(150, 204, 204, 0.2), 0 6px 20px 0 rgba(91, 195, 232,0.5);
-}
-#myplot{
-    width: 100%;
-    max-width: 250px;
-}
-#myplot2{
-    width: 100%;
-    max-width: 250px;
-}
+*/
