@@ -17,7 +17,8 @@ def getReviewsWithKeyWords(setsKeyWords, date):
             text = remove_non_letters(review[1])
             wordsInReview = text.lower().split() # list with the words in a review
             for count, keyWords in enumerate(setsKeyWords): # select the set of keywords
-                if all(keys in wordsInReview for keys in keyWords): # check if review contains keywords
+                keyWordsList = keyWords.split()
+                if all(keys in wordsInReview for keys in keyWordsList): # check if review contains keywords
                     # select review
                     # add review to list (by timestamp)
                     relevantReviews[count].append(review)
