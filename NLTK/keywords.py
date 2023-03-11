@@ -19,6 +19,7 @@ stringSwords = stringSwords.replace("\n"," ")
 swords = stringSwords.split(" ")
 f1.close()
 
+lengte_range = [3,5]
 
 comments = "full_text.txt"
 #comments = input("type filename")
@@ -38,17 +39,20 @@ with open(comments,'r',encoding='iso-8859-1') as fd:
             if lines > 100:
                 lines = 0
                 
-                for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(2, 4), stop_words=swords)):
+                for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(lengte_range[0],lengte_range[1]
+), stop_words=swords)):
                     keywords.add(element)
                 currentbufferstring = ""
 
         except:
             test = kw_model.extract_keywords(currentbufferstring)
-            for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(2, 4), stop_words=swords)):
+            for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(lengte_range[0],lengte_range[1]
+), stop_words=swords)):
                     keywords.add(element)
             currentbufferstring = ""
     
-    for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(2, 4), stop_words=swords)):
+    for element in (kw_model.extract_keywords(currentbufferstring, keyphrase_ngram_range=(lengte_range[0],lengte_range[1]
+), stop_words=swords)):
         keywords.add(element)
         currentbufferstring = ""
     
