@@ -2,7 +2,7 @@ this project
 
 
 AFTHacketon folder:
-    
+    code of the site
 
 NLTK folder:
     this module contains all the methods to extract the most important keywords out of a large .txt file
