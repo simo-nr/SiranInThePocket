@@ -109,7 +109,7 @@
                     ?>>
 
                 </div>
-                <input type="submit" value="login" name="login">
+                <input type="submit" value="login" name="login" id="login">
             </form>
             <?php
                 }

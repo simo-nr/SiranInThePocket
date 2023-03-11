@@ -109,14 +109,14 @@
             <h3>Click here for your <a href="detailedData.php">detailed analysis</a></h3>
         </div>
         <hr>
-        <div class="reviewAVG">
+        <div class="reviewAVG"> 
             <div class="reviewAVGtext">
                 <p><b>Average</b> </p>
                 <p>These are Average ratings of every 2 weeks over the timespan of 3 months</p>
             </div>
             <div id="reviewAVGgraph">
                 
-            </div>
+            </div><!-- this part is hardcoded-->
             <script>
                 var xArray = [50,60,70,80,90,100,110,120,130,140,150];
                 var yArray = [1,1,2,3,3,1,4,2,1,1,1];

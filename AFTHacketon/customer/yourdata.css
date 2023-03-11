@@ -8,6 +8,9 @@ nav{
     margin-bottom: 5px;
     min-width: 570px;
 }
+body{
+    font-family: sans-serif;
+}
 nav a {
     color: #f1f1f1;
     display: block;
