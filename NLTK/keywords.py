@@ -13,13 +13,10 @@ def get_keywords(tekst_name,language="e"):
         print("nederlands")
         f1 = open("stop_words_nederlands.txt",'r')
 
-    #stopwoordenfile
     stringSwords = f1.read()
     stringSwords = stringSwords.replace("\n"," ")
     swords = stringSwords.split(" ")
     f1.close()
-    #print("stopwoorden gelezen")
-
     
     with open(tekst_name,'r',encoding='iso-8859-1') as fd:
         csvreader = csv.reader(fd)
@@ -35,23 +32,17 @@ def get_keywords(tekst_name,language="e"):
             try:
                 currentbufferstring = currentbufferstring + " " + row[0]
                 lines += 1
-                print(" ",end="")
                 if lines > 100:
                     lines = 0
                     addkeywords(keywords,currentbufferstring,min,max,swords)
                     currentbufferstring = ""
-                    print(".",end= "")
 
             except:
                 addkeywords(keywords,currentbufferstring,min,max,swords)
                 currentbufferstring = ""
-                print("*",end= "")
         
         
-        addkeywords(keywords,currentbufferstring,min,max,swords)
-        currentbufferstring = ""
-        print("_",end= "")
-        
+        addkeywords(keywords,currentbufferstring,min,max,swords)                
         keywords.sort(key = lambda x: x[1],reverse=True)
         return keywords
         
