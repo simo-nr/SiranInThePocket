@@ -119,7 +119,7 @@
             <form action="logout.php" method="POST">
                 <input type="submit" value="logout" name="logout">
             </form>
-            <a href="../customer/orders.php">Your data</a>
+            <a href="../customer/yourdata.php">Your data</a>
             
             <?php
                 

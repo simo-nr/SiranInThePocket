@@ -46,11 +46,30 @@
 </nav>
 <div class="container">
     <div class="box">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quis architecto repellat temporibus ad maiores aliquam deleniti, repudiandae vero possimus error, ea laudantium exercitationem beatae ullam, reiciendis corporis eveniet aspernatur.</p>
-        <p>text<br>text</p>
-        <p>text</p>
-        <br>
-        <p>text</p>
+        <div class="person">
+            <p>Simon Deschagt</p>
+            <img src="../images/SimonD.jpg" alt="simonR">
+        </div>
+        <hr>
+        <div class="person">
+            <img src="../images/joranS.jpg" alt="joranD">
+            <p>Joran Deschagt</p>
+        </div>
+        <hr>
+        <div class="person">
+            <p>Andreas Vanderdonckt</p>
+            <img src="../images/andreas.jpg" alt="andreas">
+        </div>
+        <hr>
+        <div class="person">
+            <img src="../images/joranV.jpg" alt="joranV">
+            <p>Joran Van Nieuwenhoven</p>
+        </div>
+        <hr>
+        <div class="person">
+            <p>Simon Rolly</p>
+            <img src="../images/simonr.jpg" alt="simonR">
+        </div>
     </div>
 
 </div>

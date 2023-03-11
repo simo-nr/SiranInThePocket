@@ -83,3 +83,15 @@ nav ul::after {
     margin-top: 5%;
     box-shadow: 0 4px 8px 0 rgba(150, 204, 204, 0.2), 0 6px 20px 0 rgba(91, 195, 232,0.5);
 }
+.person{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+.person p{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.person img{
+    width: 20%;
+}
