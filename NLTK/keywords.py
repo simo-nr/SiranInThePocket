@@ -1,22 +1,36 @@
 # script.py
 from keybert import KeyBERT
+kw_model = KeyBERT()
+#language = input("language e/n")
+language = "n"
 
-f2 = open("stop_words_nederlands.txt",'r')
+if language == 'e':
+    print("engels")
+    f1 = open("stop_words_engels.txt",'r')
+elif language == 'n':
+    print("nederlands")
+    f1 = open("stop_words_nederlands.txt",'r')
+
+#stopwoordenfile
 stringSwords = f2.read()
-print(stringSwords)
 stringSwords = stringSwords.replace("\n"," ")
 swords = stringSwords.split(" ")
-print(swords)
 f2.close()
-input()
 
 
-file = open("opinion_file.txt",'r',encoding= 'iso-8859-1')
-doc = file.read()
+comments = "full_text.txt"
+#comments = input("type filename")
+
+def my_read(file, size=2048):
+    while 1:
+        data = file.read(size)
+        if not data:
+            break
+        yield data
 
 
+with open(comments) as f:
+    for piece in my_read(f):
+        keywords = kw_model.extract_keywords(piece)
 
-kw_model = KeyBERT()
-keywords = kw_model.extract_keywords(doc)
-
-print(kw_model.extract_keywords(doc, keyphrase_ngram_range=(2, 3), stop_words=swords))
+print(kw_model.extract_keywords(doc, keyphrase_ngram_range=(2, 4), stop_words=swords))
