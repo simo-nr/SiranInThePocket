@@ -1,0 +1,85 @@
+nav{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    background: rgba(91, 132, 196);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 570px;
+}
+nav a {
+    color: #f1f1f1;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-out 10ms;
+}
+nav a:hover:not(.active) {
+    background-color: rgba(194, 210, 233,0.7);
+}
+.active{
+    background-color: rgba(194, 210, 233,0.7);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+}
+nav li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    min-width: 100px;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+.topshoppingcart{
+    width: 35px;
+    height: 35px;
+    margin-top: 70px;
+    margin-right: 50px;
+    background-color: red;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.logo img{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.container{
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+
+}
+.box{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(100,100,100);
+    margin-left: 20%;
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(150, 204, 204, 0.2), 0 6px 20px 0 rgba(91, 195, 232,0.5);
+}
